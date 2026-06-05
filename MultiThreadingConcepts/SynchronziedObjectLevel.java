@@ -22,11 +22,12 @@ class Obj{
 
 }
 
-public class SynchronziedClassLevel {
+ class SynchronziedClassLevel {
     public static void main(String []args){
         Obj ob=new Obj();
+        Obj ob1=new Obj();
         MyThreadSync t1=new MyThreadSync(ob);
-        MyThreadSync t2=new MyThreadSync(ob);
+        MyThreadSync t2=new MyThreadSync(ob1);
         t1.start();
         t2.start();
 
