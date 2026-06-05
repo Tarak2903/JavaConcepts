@@ -10,10 +10,9 @@ class MyThread extends Thread{
             }
         }
     }
-
 }
 
-class Main{
+class ExtendingThread{
     public static void main(String []args){
 
         MyThread thread=new MyThread();
