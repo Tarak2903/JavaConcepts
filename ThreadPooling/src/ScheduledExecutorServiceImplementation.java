@@ -1,12 +1,10 @@
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
 class Pm {
     public void run(){
         System.out.println("Hello from "+ Thread.currentThread().getName());
     }
-
 }
 class Pm1{
     public void run(){
@@ -37,9 +35,7 @@ public class ScheduledExecutorServiceImplementation{
                 2,
                 TimeUnit.SECONDS
         );
-
         Thread.sleep(10000);
-
         System.out.println("Hello from "+ Thread.currentThread().getName());
         exe.close();
 
