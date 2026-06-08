@@ -1,9 +1,18 @@
+import java.util.concurrent.locks.ReentrantLock;
+
 class Counter{
 
     int counter=0;
-
+    ReentrantLock lock =new ReentrantLock();
      void increment(){
-        counter++;
+         lock.lock();
+         try{
+             counter++;
+         }
+         finally{
+             lock.unlock();
+         }
+
     }
 }
 class MyThread extends Thread{
