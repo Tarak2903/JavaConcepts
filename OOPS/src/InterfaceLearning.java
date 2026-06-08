@@ -58,3 +58,11 @@ public class InterfaceLearning{
 
 // Data Members in Interface
 // They are by default static final
+
+
+
+//Types of Interfaces
+// 1.Functional Interface -> Have exactly one abstract method
+// 2.Marker Interface -> No abstract  method
+// 3.Simple interface which can have each and everything
+
