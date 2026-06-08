@@ -36,5 +36,9 @@ public class ParentMemory {
          System.out.println(x.x);
     }
 }
+// ALWAYS FIRST THE REFERENCE TYPE IS CHECKED WHETHER THE FUNCTION IS AVAILABLE OR NOT THEN AT THE RUN TIME
+//WE CHECK THE OBJECT TYPE
+
+
 
 //Here the method overriding that i am doing is called dynamic dispatch
