@@ -22,3 +22,4 @@ public class ObjectClass {
 
 //Every Java class extends Object class implicitly
 //toString() is a method whose purpose is to return a string representation of an object or value.
+//hashCode has a contract with equals that 2 objects are only equal if and only if they have the same hashCode
