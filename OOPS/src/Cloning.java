@@ -25,4 +25,7 @@ public class Cloning {
 2. Copy all field values from old object
 
 3. Return the new object
+
+
+JVM does not do new Student();
  */
