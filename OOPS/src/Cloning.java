@@ -28,4 +28,10 @@ public class Cloning {
 
 
 JVM does not do new Student();
+
+
+!!!!!
+Clone does not call Constructor
+
+.clone performs shallow copy NOT deep copy  
  */
