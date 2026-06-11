@@ -66,3 +66,7 @@ public class InterfaceLearning{
 // 2.Marker Interface -> No abstract  method
 // 3.Simple interface which can have each and everything
 
+
+// static methods are used in interface if we want to introduce some new feature in interface  and they cant be changed by their childs
+// default methods follow the same procedure but they can be overriden
+
