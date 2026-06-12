@@ -28,3 +28,5 @@ public class CallableImplementation  {
         exe.shutdown();
     }
 }
+
+//Success Failed And Running are the 3 states of Future

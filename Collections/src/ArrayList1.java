@@ -1,34 +1,35 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Stack;
 
-//Array List is
+public class ArrayList1{
+    public static void main(String[] args){
 
+        List<Integer> x = new ArrayList<>();
 
+        x.add(1);
+        x.add(3);
+        if(x.contains(1)) System.out.println("1 is contained");
 
+        List<Integer>y= new ArrayList<>();
+        y.add(20);
 
-class List1{
-    public static void main(String []args){
+        x.addAll(1,y);
 
-        List<String> arr= new ArrayList<>();
+        Iterator<Integer> it =x .iterator();
 
-       List<String> newarr= new ArrayList<>();
-
-        newarr.add("Tarak");
-        newarr.add("Harsh");
-        newarr.add("Saurabh");
-
-        arr.add("Tarak");
-        arr.add("Harsh");
-        arr.add("Saurabh");
-
-        arr.addAll(1,newarr);
-
-        System.out.println(arr.contains("Tarak"));
-
-
-        for(String i: arr){
-            System.out.print(i+" ");
+        while(it.hasNext()) {
+            if (it.next() % 2 == 0) {
+                it.remove();
+            }
         }
+        Iterator<Integer> it2= x.iterator();
+        while (it2.hasNext()){
+            System.out.println(it2.next());
+        }
+
+
 
     }
 }
