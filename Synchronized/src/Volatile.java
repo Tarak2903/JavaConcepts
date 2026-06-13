@@ -1,7 +1,7 @@
 import java.util.concurrent.*;
 
 class Bo{
-    public  boolean flag=false;
+    public volatile boolean flag=false;
     public void setFlag(){
         flag=true;
     }
@@ -40,3 +40,4 @@ public class Volatile  {
 
     }
 }
+//False Sharing STUDY!!!!! 
