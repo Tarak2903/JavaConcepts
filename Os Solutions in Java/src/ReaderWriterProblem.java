@@ -39,7 +39,7 @@ class Database {
         notifyAll();
     }
 }
-class Main{
+class ReaderWriterProblem{
     public static void main(String []args){
 
     }
