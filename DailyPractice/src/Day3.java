@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.concurrent.Callable;
 
 class Order{
     int orderId;
@@ -22,7 +23,20 @@ class Order{
 class OrderProcessor{
 
     public  List<Order> ls;
+    public  synchronized void  add(Order o){
+        ls.add(o);
+    }
 }
+
+class OrderTask implements Callable<Integer>{
+
+    @Override
+    public Integer call() throws Exception {
+        return 0;
+    }
+}
+
+
 
 public class Day3 {
 }
